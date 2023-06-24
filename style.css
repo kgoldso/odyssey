@@ -563,4 +563,39 @@ footer {
     font-size: 1.8vw;
     margin: 1vw;
   }
+
+  .space-travel-section {
+    height: 130vw;
+  }
+
+  .space-travel-content {
+    height: 100%;
+  }
+
+  .space-travel-block {
+    height: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .space-travel-block h2 {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .space-travel-block p {
+    font-size: 2.3vw;
+  }
+
+  .video-button {
+    width: 20vw;
+    text-align: center;
+    margin-right: 10vw;
+  }
+
+  .space-travel-block img {
+    width: 25vw;
+    height: 20vw;
+  }
 }
