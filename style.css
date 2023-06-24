@@ -545,10 +545,22 @@ footer {
   }
 
   .fact-section {
-    height: 150vw;
+    height: 170vw;
   }
 
   .fact-title {
-    font-size: 6vw;
+    font-size: 7vw;
+    margin-bottom: 15vw;
+  }
+
+  .fact-grid {
+    height: 120vw;
+  }
+
+  .fact-block {
+    height: 50vw;
+    width: 25vw;
+    font-size: 1.7vw;
+    margin: 1vw;
   }
 }
