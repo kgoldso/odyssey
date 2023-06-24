@@ -129,6 +129,8 @@ nav ul li a {
     color: #fff;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .fact-title {
@@ -536,7 +538,7 @@ footer {
   }
 
   .present {
-    height: 120vw;
+    height: 170vw;
   }
   
   .present h1 {
@@ -545,7 +547,7 @@ footer {
   }
 
   .fact-section {
-    height: 170vw;
+    height: 200vw;
   }
 
   .fact-title {
@@ -555,12 +557,13 @@ footer {
 
   .fact-grid {
     height: 120vw;
+    gap: 2.4vw;
   }
 
   .fact-block {
-    height: 50vw;
-    width: 25vw;
-    font-size: 1.8vw;
+    height: 65vw;
+    width: 28vw;
+    font-size: 2.2vw;
     margin: 1vw;
   }
 
