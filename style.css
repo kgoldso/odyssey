@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 
@@ -603,5 +603,105 @@ footer {
   .space-travel-block img {
     width: 25vw;
     height: 20vw;
+  }
+
+
+
+
+
+
+  .calendar {
+    height: 130vw;
+  }
+
+ .active {
+  width: 70vw;
+  height: 60vw;
+ }
+
+ .contentBox div h2 {
+  color: #fff;
+  font-size: 5vw;
+  margin-bottom: 1.4vw;
+}
+
+  .contentBox {
+    max-width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contentBox p {
+    height: 15vw;
+
+  }
+
+  .controls {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .controls li {
+    width: 15vw;
+    height: 7.5vw;
+  }
+
+  .dark-section {
+    height: 150vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 10vw;
+  }
+
+  .image-grid {
+    height: 110vw;
+  }
+
+  .image-grid img {
+    width: 30vw;
+    height: 20vw;
+  }
+
+  .text-photo {
+    width: 45vw;
+    height: 30vw;
+  }
+
+
+  .controls li::before {
+    content: '';
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    border-left: 1vw solid #111;
+    border-bottom: 1vw solid #111;
+    transform: rotate(45deg);
+}
+
+
+  footer {
+    height: 33vw;
+  }
+
+  footer p {
+    font-size: 3vw;
+  }
+
+  .footer-left {
+    margin-top: 10vw;
+    display: grid;
+    gap: 2.5vw;
+  }
+
+  .footer-right {
+    margin-top: 15vw;
+  }
+
+  .footer-right a {
+    font-size: 6vw;
+    margin-right: 7vw;
   }
 }
