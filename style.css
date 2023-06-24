@@ -511,3 +511,44 @@ footer {
 .footer-right a:hover {
   color: #007bff;
 }
+
+
+@media (max-width: 992px) {
+  * {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+
+  header {
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #site-title {
+  font-size: 6vw;
+  }
+
+  nav ul li {
+    margin-right: 1vw;
+    font-size: 2vw;
+    margin-left: 1vw;
+  }
+
+  .present {
+    height: 120vw;
+  }
+  
+  .present h1 {
+    font-size: 9.5vw;
+    line-height: 14vw;
+  }
+
+  .fact-section {
+    height: 150vw;
+  }
+
+  .fact-title {
+    font-size: 6vw;
+  }
+}
