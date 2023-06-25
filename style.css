@@ -688,6 +688,22 @@ footer {
     height: 30vw;
   }
 
+  .modal-content {
+    position: relative;
+    width: 80vw;
+    height: 50vw;
+  }
+
+  .modal .close {
+    color: #fff;
+    font-size: 6vw;
+    font-weight: bold;
+    position: absolute;
+    top: 1vw;
+    right: 1.7vw;
+    cursor: pointer;
+  }
+
   .text-photo {
     width: 45vw;
     height: 5vw;
