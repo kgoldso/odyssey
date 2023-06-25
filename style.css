@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 
@@ -521,7 +521,7 @@ footer {
   }
 
   header {
-    height: 30vw;
+    height: 20vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -547,7 +547,15 @@ footer {
   }
 
   .fact-section {
-    height: 200vw;
+    height: 220vw;
+  }
+
+  .fact-container {
+    height: 180vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 10vw;
   }
 
   .fact-title {
@@ -556,29 +564,30 @@ footer {
   }
 
   .fact-grid {
-    height: 120vw;
+    height: 180vw;
     gap: 2.4vw;
   }
 
   .fact-block {
-    height: 65vw;
+    height: 75vw;
     width: 28vw;
-    font-size: 2.2vw;
+    font-size: 2.3vw;
     margin: 1vw;
   }
 
   .space-travel-section {
-    height: 130vw;
+    height: 200vw;
   }
 
   .space-travel-content {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .space-travel-block {
     height: 90vw;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
   }
 
@@ -637,37 +646,57 @@ footer {
 
   }
 
+  .contentBox div p {
+    color: #fff;
+    font-size: 3vw;
+}
+
+
   .controls {
-    width: 15vw;
-    height: 15vw;
+    width: 20vw;
+    height: 20vw;
   }
 
   .controls li {
-    width: 15vw;
-    height: 7.5vw;
+    width: 20vw;
+    height: 10vw;
   }
 
   .dark-section {
-    height: 150vw;
+    height: 250vw;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: column;
-    font-size: 10vw;
   }
 
   .image-grid {
-    height: 110vw;
+    height: 150vw;
+    margin: 1vw;
   }
 
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+
   .image-grid img {
-    width: 30vw;
-    height: 20vw;
+    width: 47vw;
+    height: 30vw;
   }
 
   .text-photo {
     width: 45vw;
-    height: 30vw;
+    height: 5vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+  }
+
+  .text-photo h2 {
+    font-size: 7vw;
   }
 
 
