@@ -8,8 +8,8 @@ ScrollReveal().reveal('.image-grid', { easing: 'ease-in' });
 ScrollReveal().reveal('.contentBox', { easing: 'ease-in' });
 ScrollReveal().reveal('.controls', { easing: 'ease-in' });
 ScrollReveal().reveal('.footer-content', { easing: 'ease-in' });
-
-
+ScrollReveal().reveal('.menu-a', { easing: 'ease-in' });
+ScrollReveal().reveal('#site-title', { easing: 'ease-in' });
 
 
 // ScrollReveal().reveal('.', { easing: 'ease-in' });
