@@ -48,3 +48,18 @@ function nextSlideText() {
     j = (j + 1) % slidesText.length;
     slidesText[j].classList.add('active');
 }
+
+var audioButton = document.getElementById('audioButton');
+var audioPlayer = document.getElementById('audioPlayer');
+
+audioButton.addEventListener('click', function() {
+  if (audioPlayer.paused) {
+    audioPlayer.play();
+    audioButton.classList.add('playing');
+    audioButton.textContent = 'Пауза';
+  } else {
+    audioPlayer.pause();
+    audioButton.classList.remove('playing');
+    audioButton.textContent = 'Воспроизвести';
+  }
+});
