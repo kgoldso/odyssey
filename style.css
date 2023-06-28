@@ -436,6 +436,36 @@ nav ul li a {
   -moz-transform: skew(30deg);
   -o-transform: skew(30deg);
   transform: skew(30deg);
+  margin-right: 4vw;
+  user-select: none;
+}
+
+.text-sound-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30vw;
+  height: 20vw;
+  border-radius: 3vw;
+  box-shadow: .2vw .2vw .05vw rgba(0, 0, 0, 0.158);
+  background-color: #7a646415;
+  backdrop-filter: blur(.2vw);
+  transition: .5s ease-in-out;
+}
+
+.text-sound-desc p {
+  font-size: 1vw;
+  color: white;
+  text-align: center;
+  background: linear-gradient(90deg, #ffffff, #dea6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  user-select: none;
+}
+
+.text-sound-desc:hover {
+  transform: scale(1.2);
 }
 
 .sound-section button {
@@ -638,11 +668,17 @@ footer {
   .present {
     height: 170vw;
   }
-  
+
+  .present-text {
+    width: 90vw;
+    height: 50vw;
+  }
+
   .present h1 {
     font-size: 9.5vw;
     line-height: 14vw;
   }
+
 
   .fact-section {
     height: 220vw;
@@ -682,12 +718,24 @@ footer {
   }
 
   .sound-section h2 {
-    font-size: 6vw;
+    font-size: 8vw;
   }
 
   .text-sound {
-    width: 55vw;
+    width: 65vw;
     height: 20vw;
+    margin-top: 10vw;
+  }
+
+  .text-sound-desc {
+    width: 65vw;
+    height: 60vw;
+    margin: 0;
+    padding: 1vw;
+  }
+
+  .text-sound-desc p {
+    font-size: 3vw;
   }
 
   #audioButton {
