@@ -70,36 +70,49 @@ nav ul li a {
 
 
 .present {
-  background-image: url('img/odyssey-present.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url('img/odyssey-present.jpg'); */
   width: 100vw;
-  height: 60vw;
+  height: 55vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
 }
 
 .present-text {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 80vw;
-  height: 40vw;
   flex-direction: column;
   user-select: none;
   text-align: center;
+  width: 50vw;
+  height: 20vw;
+  background-color: rgba(0, 0, 0, 0.062);
+  border-radius: 10vw;
+  backdrop-filter: blur(.4vw);
+  box-shadow: .1vw .1vw .5vw rgba(0, 0, 0, 0.171);
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  transform: skew(30deg);
+  
 }
 
 .gradient-text-cosmo {
   font-size: 4vw;
-  background: linear-gradient(45deg, #32c9dd,#ff2e2e);
+  background: linear-gradient(45deg, #929292,#988dff, #ff9752);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   user-select: none;
   font-weight: bolder;
+  transform: skew(-30deg);
+
 }
+
 
 
 .present-text p {
@@ -279,7 +292,7 @@ nav ul li a {
 
 
 .menu-a:hover {
-  background: linear-gradient(45deg, #32c9dd,#ff2e2e);
+  background: linear-gradient(45deg, #929292,#988dff, #ff9752);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -288,7 +301,7 @@ nav ul li a {
 
 
 #site-title:hover {
-  background: linear-gradient(45deg, #32c9dd,#ff2e2e);
+  background: linear-gradient(45deg, #929292,#988dff, #ff9752);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
