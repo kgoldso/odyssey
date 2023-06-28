@@ -12,5 +12,6 @@ ScrollReveal().reveal('.menu-a', { easing: 'ease-in' });
 ScrollReveal().reveal('#site-title', { easing: 'ease-in' });
 ScrollReveal().reveal('.text-sound', { easing: 'ease-in' });
 ScrollReveal().reveal('#audioButton', { easing: 'ease-in' });
+ScrollReveal().reveal('.text-sound-desc', { easing: 'ease-in' });
 
 // ScrollReveal().reveal('.', { easing: 'ease-in' });
