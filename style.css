@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #3281ff, #820cc7);
+  background: linear-gradient(45deg, #929292,#988dff, #ff9752);
   border-radius: 1vw;
 
 }
@@ -418,6 +418,7 @@ nav ul li a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  transform: skew(-30deg);
 }
 
 .text-sound {
@@ -431,6 +432,10 @@ nav ul li a {
   background-color: #7a646415;
   backdrop-filter: blur(.2vw);
   margin-top: 6vw;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  transform: skew(30deg);
 }
 
 .sound-section button {
