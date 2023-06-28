@@ -660,7 +660,7 @@ footer {
   }
 
   .sound-section {
-    height: 150vw;
+    height: 200vw;
   }
 
   .sound-section h2 {
@@ -668,14 +668,14 @@ footer {
   }
 
   .text-sound {
-    width: 45vw;
+    width: 55vw;
     height: 20vw;
   }
 
   #audioButton {
-    width: 33vw;
-    height: 10vw;
-    font-size: 3vw;
+    width: 40vw;
+    height: 13vw;
+    font-size: 4vw;
     border-radius: 3.4vw;
     margin-bottom: 23vw;
   }
