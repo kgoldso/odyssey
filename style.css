@@ -387,6 +387,61 @@ nav ul li a {
 
 
 
+.sound-section {
+  width: 100vw;
+  height: 63vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+  flex-direction: column;
+}
+
+.sound-section h2 {
+  font-size: 3vw;
+  background: linear-gradient(180deg, #ffffff, #bd4aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.text-sound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 10vw;
+  border-radius: 3vw;
+  box-shadow: .2vw .2vw .05vw rgba(0, 0, 0, 0.158);
+  background-color: #7a646415;
+  backdrop-filter: blur(.2vw);
+  margin-top: 6vw;
+}
+
+.sound-section button {
+  padding: 1vw 2vw;
+  font-size: 2vw;
+  border-radius: 2vw;
+  border: .1vw solid rgba(0, 0, 0, 0.555);
+  background-color: #ffffff79;
+  backdrop-filter: blur(.1vw);
+  width: 20vw;
+  height: 5vw;
+  text-align: center;
+  margin-bottom: 13vw;
+  transition: .2s ease-in-out;
+}
+
+.sound-section button.playing {
+  background-color: #0000007a;
+  color: #ffffff;
+}
+
+
+
+
 
 .calendar {
     position: relative;
