@@ -10,6 +10,7 @@ ScrollReveal().reveal('.controls', { easing: 'ease-in' });
 ScrollReveal().reveal('.footer-content', { easing: 'ease-in' });
 ScrollReveal().reveal('.menu-a', { easing: 'ease-in' });
 ScrollReveal().reveal('#site-title', { easing: 'ease-in' });
-
+ScrollReveal().reveal('.text-sound', { easing: 'ease-in' });
+ScrollReveal().reveal('#audioButton', { easing: 'ease-in' });
 
 // ScrollReveal().reveal('.', { easing: 'ease-in' });
