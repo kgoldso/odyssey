@@ -92,7 +92,7 @@ nav ul li a {
   height: 20vw;
   background-color: rgba(0, 0, 0, 0.062);
   border-radius: 10vw;
-  backdrop-filter: blur(.4vw);
+  backdrop-filter: blur(.24vw);
   box-shadow: .1vw .1vw .5vw rgba(0, 0, 0, 0.171);
   -webkit-transform: skew(30deg);
   -moz-transform: skew(30deg);
