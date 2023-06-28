@@ -1,872 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-
-::-webkit-scrollbar {
-  width: .86vw;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: 0.5vw 0.5vw 0.5vw -0.5vw rgba(34, 60, 80, 0.2) inset;
-  background-color: #d6d5d5;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #929292,#988dff, #ff9752);
-  border-radius: 1vw;
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Audiowide', cursive;
-    scroll-behavior: smooth;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-header {
-    background-color: #1b1b1b;
-    color: #fff;
-    padding: 2vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    height: 10vw;
-    text-transform: uppercase;
-}
-
-#site-title {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2.5vw;
-    transition: .4s ease-in-out;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 1vw;
-    font-size: 1vw;
-    margin-left: 1vw;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-.present {
-  /* background-image: url('img/odyssey-present.jpg'); */
-  width: 100vw;
-  height: 55vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-}
-
-.present-text {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  user-select: none;
-  text-align: center;
-  width: 50vw;
-  height: 20vw;
-  background-color: rgba(0, 0, 0, 0.062);
-  border-radius: 10vw;
-  backdrop-filter: blur(.4vw);
-  box-shadow: .1vw .1vw .5vw rgba(0, 0, 0, 0.171);
-  -webkit-transform: skew(30deg);
-  -moz-transform: skew(30deg);
-  -o-transform: skew(30deg);
-  transform: skew(30deg);
-  
-}
-
-.gradient-text-cosmo {
-  font-size: 4vw;
-  background: linear-gradient(45deg, #929292,#988dff, #ff9752);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  user-select: none;
-  font-weight: bolder;
-  transform: skew(-30deg);
-
-}
-
-
-
-.present-text p {
-  font-size: 2vw;
-  font-weight: 700;
-  background: linear-gradient(45deg, #ffcccc, #d3c9ff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-
-.cosmo-text {
-  display: flex;
-  justify-content: center;
-  width: 90vw;
-  height: 20vw;
-  text-align: center;
-  margin-top: 10vw;
-}
-
-
-
-
-
-
-.fact-section {
-    background-size: cover;
-    background-position: center;
-    height: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('img/background-photo.jpg');
-    padding-bottom: 10vw;
-    padding-top: 6vw;
-  }
-  
-  .fact-container {
-    text-align: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .fact-title {
-    font-size: 3vw;
-    margin-bottom: 8vw;
-    margin-top: 5vw;
-    background: linear-gradient(45deg, #a46cff, #fbfcff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .fact-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5vw;
-  }
-  
-   .fact-block {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1vw;
-    width: 27vw;
-    height: 20vw;
-    display: flex;
-    align-items: center;
-    font-size: 1vw;
-    border: .5vw double #333;
-    background: linear-gradient(45deg, #a46cff, #fbfcff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    backdrop-filter: blur(.6vw);
-  } 
-
-
-
-
-
-  .space-travel-section {
-    position: relative;
-    height: 120vh;
-    overflow: hidden;
-    background-size: cover;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
-  }
-  
-  .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  
-  .video-background video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .space-travel-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .space-travel-block {
-    background-color: rgba(218, 218, 218, 0.8);
-    border-radius: 1vw;
-    padding: 1vw;
-    margin: 2vw;
-    cursor: pointer;
-    transition: 0.3s ease;
-    width: 30vw;
-    height: 39vw;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .space-travel-block:hover {
-    transform: scale(1.1);
-    z-index: 999;
-  }
-
-.space-travel-block img {
-  width: 25vw;
-  height: 15vw;
-  border: .3vw solid #333;
-  margin: 1vw;
-}
-
-.space-travel-block p {
-  font-size: 1vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.space-travel-block h2 {
-  font-size: 1.5vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.video-button {
-  background-color: #333;
-  color: #fff;
-  padding: 1vw 3vw;
-  border: none;
-  border-radius: 0.8vw;
-  font-size: 1.5vw;
-  cursor: pointer;
-  margin-top: 1.5vw;
-  width: 15vw;
-  height: 4vw;
-  margin-left: 5vw;
-  transition: .5s ease-in-out;
-  text-decoration: none;
-}
-
-.video-button:hover {
-  background-color: #1f1e1e;
-}
-
-
-.menu-a {
-  transition: .5s ease-in-out;
-}
-
-
-.menu-a:hover {
-  background: linear-gradient(45deg, #929292,#988dff, #ff9752);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  user-select: none;
-}
-
-
-#site-title:hover {
-  background: linear-gradient(45deg, #929292,#988dff, #ff9752);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  user-select: none;
-}
-
-#site-title {
-  transition: .7s ease-in-out;
-}
-
-.fact-block {
-  transition: .6s ease-in-out;
-}
-
-
-.fact-block:hover {
-  transform: scale(1.1);
-  border: .5vw dotted gray;
-  
-}
-
-
-
-.dark-section {
-  background-image: url('img/пфд.jpg');
-  padding: 1vw;
-  padding-top: 5vw;
-  padding-bottom: 10vw;
-  height: 90vw;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.4vw;
-}
-
-.image-grid img {
-  width: 28vw;
-  height: 17vw;
-  border-radius: 1vw;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.image-grid img:hover {
-  transform: scale(1.1);
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  position: relative;
-  width: 50vw;
-  height: 25vw;
-}
-
-.modal #modalImage {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.modal .close {
-  color: #fff;
-  font-size: 1vw;
-  font-weight: bold;
-  position: absolute;
-  top: 1vw;
-  right: 1.3vw;
-  cursor: pointer;
-}
-
-.text-photo h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3vw;
-  background: linear-gradient(45deg, #ffffff, #868585);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 7vw;
-  padding-top: 5vw;
-}
-
-
-
-.sound-section {
-  width: 100vw;
-  height: 63vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  overflow: hidden;
-  background-size: cover;
-  position: relative;
-  flex-direction: column;
-}
-
-.sound-section h2 {
-  font-size: 3vw;
-  background: linear-gradient(180deg, #ffffff, #bd4aff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  transform: skew(-30deg);
-}
-
-.text-sound {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30vw;
-  height: 10vw;
-  border-radius: 3vw;
-  box-shadow: .2vw .2vw .05vw rgba(0, 0, 0, 0.158);
-  background-color: #7a646415;
-  backdrop-filter: blur(.2vw);
-  margin-top: 6vw;
-  -webkit-transform: skew(30deg);
-  -moz-transform: skew(30deg);
-  -o-transform: skew(30deg);
-  transform: skew(30deg);
-}
-
-.sound-section button {
-  padding: 1vw 2vw;
-  font-size: 2vw;
-  border-radius: 2vw;
-  border: .1vw solid rgba(0, 0, 0, 0.555);
-  background-color: #ffffff79;
-  backdrop-filter: blur(.1vw);
-  width: 20vw;
-  height: 5vw;
-  text-align: center;
-  margin-bottom: 13vw;
-  transition: .2s ease-in-out;
-}
-
-.sound-section button.playing {
-  background-color: #0000007a;
-  color: #ffffff;
-}
-
-.sound-section button:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-
-}
-
-
-
-
-
-.calendar {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-}
-
-.calendar .imgBox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.calendar .imgBox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: 0.5s;
-    background-position: center;
-}
-
-.calendar .imgBox img.active {
-    opacity: 1;
-}
-
-.controls {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    width: 4vw;
-}
-
-.controls li {
-    position: relative;
-    width: 3.5vw;
-    height: 3.5vw;
-    background-color: #fff;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-}
-
-.controls li:hover {
-    background-color: #ffeb3b;
-}
-
-.controls li::before {
-    content: '';
-    position: absolute;
-    height: 1vw;
-    width: 1vw;
-    border-left: .3vw solid #111;
-    border-bottom: .3vw solid #111;
-    transform: rotate(45deg);
-}
-
-.controls li:nth-child(2)::before {
-    transform: rotate(225deg);
-}
-
-.contentBox {
-    position: absolute;
-    bottom: 0;
-    max-width: 40vw;
-}
-
-.contentBox div {
-    display: none;
-}
-
-.contentBox div.active {
-    display: block;
-    padding: 3vw;
-    padding-left: 5vw;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(.1vw);
-}
-
-.contentBox div h2 {
-    color: #fff;
-    font-size: 2vw;
-    margin-bottom: 1.4vw;
-}
-
-.contentBox div p {
-    color: #fff;
-    font-size: 1vw;
-}
-
-
-
-
-
-
-footer {
-  width: 100vw;
-  height: 10vw;
-  background-color: #01040b;
-  color: white;
-}
-
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1vw;
-}
-
-.footer-left {
-  display: flex;
-  align-items: start;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 7vw;
-  margin-left: 4vw;
-}
-
-.footer-left a {
-  text-decoration: none;
-  color: white;
-}
-
-
-.footer-right a {
-  text-decoration: none;
-  color: #333;
-  transition: .3s ease-in-out;
-  margin-right: 4vw;
-  font-size: 3vw;
-}
-
-.footer-right a:hover {
-  color: #007bff;
-}
-
-
-@media (max-width: 992px) {
-  * {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-  }
-
-  header {
-    height: 20vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  #site-title {
-  font-size: 6vw;
-  }
-
-  nav ul li {
-    margin-right: 1vw;
-    font-size: 2vw;
-    margin-left: 1vw;
-  }
-
-  .present {
-    height: 170vw;
-  }
-  
-  .present h1 {
-    font-size: 9.5vw;
-    line-height: 14vw;
-  }
-
-  .fact-section {
-    height: 220vw;
-  }
-
-  .fact-container {
-    height: 180vw;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin-top: 10vw;
-  }
-
-  .fact-title {
-    font-size: 7vw;
-    margin-bottom: 15vw;
-  }
-
-  .fact-grid {
-    height: 180vw;
-    gap: 2.4vw;
-  }
-
-  .fact-block {
-    height: 75vw;
-    width: 28vw;
-    font-size: 2.3vw;
-    margin: 1vw;
-  }
-
-  .space-travel-section {
-    height: 200vw;
-  }
-
-  .sound-section {
-    height: 200vw;
-  }
-
-  .sound-section h2 {
-    font-size: 6vw;
-  }
-
-  .text-sound {
-    width: 55vw;
-    height: 20vw;
-  }
-
-  #audioButton {
-    width: 40vw;
-    height: 13vw;
-    font-size: 4vw;
-    border-radius: 3.4vw;
-    margin-bottom: 23vw;
-  }
-
-  .space-travel-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .space-travel-block {
-    height: 90vw;
-    justify-content: space-evenly;
-  }
-
-  .space-travel-block h2 {
-    font-size: 4vw;
-    text-align: center;
-  }
-
-  .space-travel-block p {
-    font-size: 2.3vw;
-  }
-
-  .video-button {
-    width: 20vw;
-    height: 7vw;
-    text-align: center;
-    margin-right: 10vw;
-    padding: 2vw 0 0 0;
-    font-size: 2.4vw;
-  }
-
-  .space-travel-block img {
-    width: 25vw;
-    height: 20vw;
-  }
-
-
-
-
-
-
-  .calendar {
-    height: 130vw;
-  }
-
- .active {
-  width: 70vw;
-  height: 60vw;
- }
-
- .contentBox div h2 {
-  color: #fff;
-  font-size: 5vw;
-  margin-bottom: 1.4vw;
-}
-
-  .contentBox {
-    max-width: 70vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .contentBox p {
-    height: 15vw;
-
-  }
-
-  .contentBox div p {
-    color: #fff;
-    font-size: 3vw;
-}
-
-
-  .controls {
-    width: 20vw;
-    height: 20vw;
-  }
-
-  .controls li {
-    width: 20vw;
-    height: 10vw;
-  }
-
-  .dark-section {
-    height: 250vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-  }
-
-  .image-grid {
-    height: 150vw;
-    margin: 1vw;
-  }
-
-  .image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odyssey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="#" id="site-title">ODYSSEY</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#section1" class="menu-a">факты</a></li>
+                <li><a href="#section2" class="menu-a">исследования</a></li>
+                <li><a href="#section3" class="menu-a">Фотогалерея</a></li>
+                <li><a href="#section-sound" class="menu-a">Звучание</a></li>
+                <li><a href="#section4" class="menu-a">календарь</a></li>
+                <li><a href="#section5" class="menu-a">контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="present">
+      <div class="present-text">
+        <h1 class="gradient-text-cosmo">Космос, <br> такой загадочный и далекий...</h1>
+      </div>
+        <div class="video-background">
+          <video autoplay loop muted>
+            <source src="video/tumannosti2.mp4" type="video/mp4">
+          </video>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="fact-section" id="section1">
+        <div class="fact-container">
+          <h2 class="fact-title">А вы знали что..</h2>
+          <div class="fact-grid">
+            <div class="fact-block">
+                Вселенная содержит огромное количество галактик, и каждая галактика может содержать миллиарды звезд. Но что интересно, известно, что количество звезд во Вселенной превышает количество всех зерен песка на Земле.</span>
+            </div>
+            <div class="fact-block">
+                Звезда по имени 'Музыкальный демон' или PSR B1257+12C, открытая в 1992 году, известна своей невероятно быстрой скоростью вращения. Эта нейтронная звезда вращается с потрясающей скоростью более 700 оборотов в секунду, что делает ее одной из самых быстро вращающихся известных звезд во Вселенной.
+            </div>
+            <div class="fact-block">
+              Что может показаться удивительным, так это то, что большая часть Вселенной состоит из невидимого вещества, которое мы не можем наблюдать непосредственно. Это так называемая 'темная материя', которая составляет примерно 27% всей энергии и вещества во Вселенной.
+            </div>
+            <div class="fact-block">
+              Во Вселенной существует явление, известное как 'вайт-джеты' (англ. white jets) или 'суперяркие квазары'. Это колоссальные струи плазмы, которые выбрасываются из центра активных галактик. Вайт-джеты могут распространяться на многие тысячи световых лет и могут быть настолько яркими, что превосходят светимость целой галактики.
+            </div>
+            <div class="fact-block">
+              Один из самых загадочных феноменов в космосе называется 'вайт-хол'. Это явление, которое наблюдается вблизи черных дыр. Вайт-хол представляет собой гипотетическую область пространства и времени, где время и пространство меняются настолько интенсивно, что классические физические законы перестают действовать. Вайт-холы считаются возможным путем для путешествий во времени, хотя это все еще остается в области теоретических исследований.
+            </div>
+            <div class="fact-block">
+              Космос не является абсолютно беззвуковым. В действительности, в некоторых областях космического пространства есть звуки, но они не могут распространяться так же, как звук на Земле из-за отсутствия воздуха и других сред для передачи звуковых волн. Вместо этого, астрономы используют специальные инструменты, чтобы перевести электромагнитные сигналы, например, от галактик и звезд, в звуковые волны, которые мы можем услышать.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-travel-section" id="section2">
+        <div class="video-background">
+          <video autoplay loop muted>
+            <source src="video/back-video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="space-travel-content">
+          <div class="space-travel-block">
+            <h2>Собаки-космонавты</h2>
+            <img src="img/bel-i-str.jpg" alt="Фото 3">
+            <p>Белка и Стрелка были двумя собаками-космонавтами, которые стали первыми животными, успешно вернувшимися с орбиты Земли. Их полет состоялся 19 августа 1960 года в рамках советской космической программы. Белка, самка болонки, и Стрелка, самец-московская сторожевая, были подготовлены и обучены для миссии космического полета.</p>
+            <a href="https://www.youtube.com/watch?v=223SjqZ8UwQ" target="_blank" class="video-button">Посмотреть</a>
+        </div>
+          <div class="space-travel-block">
+            <h2>Первый человек в космосе</h2>
+            <img src="img/gagarin.jfif" alt="Фото 1">
+            <p>Первый полет человека в космос считается одним из наиболее значимых событий в истории и космической эпохе. Этот исторический момент произошел 12 апреля 1961 года и был выполнен Юрием Алексеевичем Гагариным. Во время этого исторического полета, Юрий Гагарин совершил один оборот вокруг Земли. </p>
+            <a href="https://www.youtube.com/watch?v=b0ktgWlN7SE" target="_blank" class="video-button">Посмотреть</a>
+        </div>
+          <div class="space-travel-block">
+            <h2>Первый человек на Луне</h2>
+            <img src="img/apollon.jpg" alt="Фото 2">
+            <p>Первым человеком, который ступил на луну, был американский астронавт Нил Армстронг. Это историческое событие произошло 20 июля 1969 года во время миссии Apollo 11. Apollo 11 была космической миссией, организованной американским космическим агентством NASA с целью достижения Луны и высадки астронавтов на ее поверхность. </p>
+            <a href="https://www.youtube.com/watch?v=cwZb2mqId0A" target="_blank" class="video-button">Посмотреть</a>
+        </div>
+        </div>
+      </section>
+
+
+      <section class="dark-section" id="section3">
+        <div class="text-photo">
+          <h2>Фотогалерея</h2>
+        </div>
+        <div class="image-grid">
+          <img src="img/photo-1.jpg" alt="Image 1" onclick="openModal('img/photo-1.jpg')">
+          <img src="img/photo-2.jfif" alt="Image 2" onclick="openModal('img/photo-2.jfif')">
+          <img src="img/photo-3.jpg" alt="Image 3" onclick="openModal('img/photo-3.jpg')">
+          <img src="img/photo-4.jfif" alt="Image 4" onclick="openModal('img/photo-4.jfif')">
+          <img src="img/photo-5.avif" alt="Image 5" onclick="openModal('img/photo-5.avif')">
+          <img src="img/photo-6.avif" alt="Image 6" onclick="openModal('img/photo-6.avif')">
+          <img src="img/photo-7.jpg" alt="Image 7" onclick="openModal('img/photo-7.jpg')">
+          <img src="img/photo-8.jpg" alt="Image 8" onclick="openModal('img/photo-8.jpg')">
+          <img src="img/photo-9.jpg" alt="Image 9" onclick="openModal('img/photo-9.jpg')">
+        </div>
+      </section>
+    
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img id="modalImage" src="">
+        </div>
+      </div>
+
+
+      <section class="sound-section" id="section-sound">
+        <div class="text-sound">
+          <h2>ЗВУКИ КОСМОСА</h2>
+        </div>
+        <div class="video-background">
+          <video autoplay loop muted>
+            <source src="video/tumannosti.mp4" type="video/mp4">
+          </video>
+        </div>
+        <button id="audioButton">Воспроизвести</button>
+        <audio id="audioPlayer" src="sound/cosmos.mp3"></audio>
+      </section>
+
+    
   
 
-  .image-grid img {
-    width: 47vw;
-    height: 30vw;
-  }
+      <section class="calendar" id="section4">
+        <div class="imgBox">
+          <img src="img/cal-1.jpeg" alt="img" class="active">
+          <img src="img/cal-2.jpg" alt="img">
+          <img src="img/cal-3.jpg" alt="img">
+          <img src="img/cal-4.jpg" alt="img">
+        </div>
+        <div class="contentBox">
+          <div class="active">
+            <h2>Полное солнечное затмение</h2>
+            <p>8 апреля 2024 года запланировано полное солнечное затмение, которое будет видимо в некоторых регионах Северной Америки, включая Мексику, США и Канаду. Затмение сопровождается затмительным зрелищем, когда Луна полностью перекрывает Солнце, создавая темноту и выявляя яркий солнечный корону.</p>
+          </div>
 
-  .modal-content {
-    position: relative;
-    width: 80vw;
-    height: 50vw;
-  }
+          <div>
+            <h2>Транзит Венеры</h2>   
+            <p>8 декабря 2125 года запланирован следующий транзит Венеры. Транзит Венеры происходит, когда Венера проходит между Землей и Солнцем, создавая темную силуэтную точку на поверхности Солнца. Это редкое явление, которое происходит дважды век и обычно имеет интервал в 8 лет между транзитами. Следующий транзит Венеры после 2125 года ожидается только в 2247 году.</p> 
+          </div>
+        
+          <div class="div">
+            <h2>Метеорный поток Леониды</h2>
+            <p>Каждый год в середине ноября Земля пересекает орбиту кометы Темпеля-Таттля, что приводит к яркому метеорному потоку Леонидов. Однако в 2033 году ожидается увеличение активности этого потока, что может привести к сильному всплеску метеоров. Если условия будут благоприятными, это может стать незабываемым зрелищем для наблюдателей.</p>
+          </div>
+        
+          <div>
+            <h2>Ближайшая суперновая</h2>
+            <p>В ближайшие годы ожидается взрыв звезды в нашей галактике Млечный Путь, который может стать ближайшей суперновой, видимой с Земли. Суперновые являются яркими вспышками, возникающими при взрыве массивных звезд, и они предоставляют ученым уникальную возможность изучать физические процессы, происходящие во Вселенной.</p>
+          </div>
+        </div>
 
-  .modal .close {
-    color: #fff;
-    font-size: 6vw;
-    font-weight: bold;
-    position: absolute;
-    top: 1vw;
-    right: 1.7vw;
-    cursor: pointer;
-  }
+        <ul class="controls">
+          <li onclick="prevSlide(); prevSlideText();"></li>
+          <li onclick="nextSlide(); nextSlideText();"></li>
+        </ul>
 
-  .text-photo {
-    width: 45vw;
-    height: 5vw;
-    padding-bottom: 1vw;
-    padding-top: 1vw;
-  }
+      </section>
 
-  .text-photo h2 {
-    font-size: 7vw;
-  }
+      <footer id="section5">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2023 Odyssey</p>
+                <a href="tel:+375296563931"><p>phone: +375 29 656 39 31</p></a>
+                <a href="mailto:odyssey-cosmo@gmail.com"><p>email: odyssey-cosmo@gmail.com</p></a>
 
+                
+            </div>
+            <div class="footer-right">
+                <p><a href="#">ODYSSEY</a></p>
 
-  .controls li::before {
-    content: '';
-    position: absolute;
-    height: 3vw;
-    width: 3vw;
-    border-left: 1vw solid #111;
-    border-bottom: 1vw solid #111;
-    transform: rotate(45deg);
-}
+            </div>
+        </div>
+    </footer>
 
-
-  footer {
-    height: 27vw;
-  }
-
-  footer p {
-    font-size: 2.6vw;
-    font-weight: 200;
-  }
-
-  .footer-left {
-    margin-top: 1vw;
-    display: grid;
-    gap: 2.5vw;
-  }
-
-  .footer-right {
-    margin-top: 10vw;
-  }
-
-  .footer-right a {
-    font-size: 6vw;
-    margin-right: 6vw;
-  }
-}
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
