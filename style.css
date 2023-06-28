@@ -439,6 +439,12 @@ nav ul li a {
   color: #ffffff;
 }
 
+.sound-section button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+
+}
+
 
 
 
@@ -651,6 +657,27 @@ footer {
 
   .space-travel-section {
     height: 200vw;
+  }
+
+  .sound-section {
+    height: 150vw;
+  }
+
+  .sound-section h2 {
+    font-size: 6vw;
+  }
+
+  .text-sound {
+    width: 45vw;
+    height: 20vw;
+  }
+
+  #audioButton {
+    width: 33vw;
+    height: 10vw;
+    font-size: 3vw;
+    border-radius: 3.4vw;
+    margin-bottom: 23vw;
   }
 
   .space-travel-content {
